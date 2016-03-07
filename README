@@ -1,0 +1,19 @@
+To start the dissasembler please do the following:
+
+1. open dissasembler.py and from line 8 uncomment the byte file you want to test the dissasembler with.
+#binaryPath="test1"
+#binaryPath="res/example1.o"
+#binaryPath="res/example2.o"
+binaryPath="res/ex2"
+
+2. save and from the shell execute:
+	python dissasembler.py
+
+
+Choosen Algorithm: Linear Sweep
+Weaknesses:
+	- This is a "less smart than recursive" algorithm because it 
+	attempts to execute line by line and if a data section is
+	encounter the bytes will be handle as possible opcodes to 
+	continue the dissasemble process.
+
